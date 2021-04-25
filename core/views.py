@@ -10,5 +10,5 @@ def index(request):
 
 @login_required
 def profile(request):
-    print(request.user)
+    print('username------------------',request.user)
     return render(request, 'profile.html', {'username': request.user})
